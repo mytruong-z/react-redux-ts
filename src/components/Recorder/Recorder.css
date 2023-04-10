@@ -1,0 +1,44 @@
+.recorder {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 40px;
+  }
+  
+  .recorder-record {
+    background: #e3f6f5;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+  }
+  
+  .recorder-record span {
+    background: #f25042;
+    border-radius: 50%;
+    display: inline-block;
+    height: 24px;
+    vertical-align: middle;
+    width: 24px;
+    transition: all 0.3s ease-out;
+  }
+  
+  .recorder-started .recorder-record span {
+    border-radius: 0;
+    height: 22px;
+    width: 22px;
+  }
+  
+  .recorder-counter {
+    margin: 0 0 0 15px;
+    text-align: center;
+    width: 80px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-out;
+  }
+  
+  .recorder-started .recorder-counter {
+    opacity: 1;
+  }
+  
